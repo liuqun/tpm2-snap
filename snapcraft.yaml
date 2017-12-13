@@ -13,7 +13,7 @@ grade: stable
 
 apps:
   resourcemgr:
-    command: sbin/resourcemgr
+    command: sbin/tpm2-abrmd
     daemon: simple
     plugs: [tpm, network-bind]
   activatecredential:
