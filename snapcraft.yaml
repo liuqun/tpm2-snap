@@ -183,6 +183,8 @@ parts:
       - libglib2.0-dev
       - libtool
       - pkg-config
+    prime:
+      - -include
     install: |
       # Run all tests shipped by default
       make check
