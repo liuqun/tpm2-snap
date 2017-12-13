@@ -165,7 +165,7 @@ parts:
     prime:
       - -include
 
-  tpm2-tabrmd:
+  tpm2-abrmd:
     # You can download the latest official release from:
     # https://github.com/intel/tpm2-abrmd/releases/latest
     source: https://github.com/intel/tpm2-abrmd/releases/download/1.2.0/tpm2-abrmd-1.2.0.tar.gz
@@ -213,7 +213,7 @@ parts:
       - -include
     after:
       - tpm2-tss
-      - tpm2-tabrmd
+      - tpm2-abrmd
     install: |
       # Run all tests shipped by default
       make check
