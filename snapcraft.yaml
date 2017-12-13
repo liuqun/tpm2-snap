@@ -199,6 +199,7 @@ parts:
     source-type: git
     source-branch: 2.X
     configflags:
+      - --with-tcti-tabrmd
       - --enable-unit
     build-packages:
       - autoconf
@@ -212,6 +213,7 @@ parts:
       - -include
     after:
       - tpm2-tss
+      - tpm2-tabrmd
     install: |
       # Run all tests shipped by default
       make check
