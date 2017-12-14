@@ -26,9 +26,9 @@ plugs:
 apps:
   resourcemgr:
     command: sbin/tpm2-abrmd
-    daemon: simple
     slots: [tcti-dbus-server-side]
-    plugs: [tpm]
+    plugs: [tpm, network]
+    aliases: [tpm2-abrmd, resourcemgr]
   activatecredential:
     command: sbin/tpm2_activatecredential
     plugs: [tcti-dbus-app-side, network, home]
