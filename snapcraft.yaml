@@ -236,3 +236,14 @@ parts:
     install: |
       # Run all tests shipped by default
       make check
+
+  tpm2-pk11:
+    after:
+      - tpm2-tss
+      - tpm2-abrmd
+    source: https://github.com/irtimmer/tpm2-pk11.git
+    source-type: git
+    plugin: cmake
+    build-packages:
+      - libp11-kit-dev
+      - libtasn1-dev
