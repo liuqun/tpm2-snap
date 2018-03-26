@@ -168,6 +168,7 @@ parts:
     source: https://github.com/tpm2-software/tpm2-tss/releases/download/1.4.0/tpm2-tss-1.4.0.tar.gz
     source-checksum: sha256/cf8784cc536be16e6fba47f77033e093a6aeaed8420877ac9f42f77fb7b09031
     configflags:
+      - --disable-static
       - --enable-unit
     build-packages:
       - libtool
@@ -188,6 +189,7 @@ parts:
       - tpm2-tss
     plugin: autotools
     configflags:
+      - --disable-static
       - --enable-unit
       - "CFLAGS=-Wno-int-to-pointer-cast"
     build-packages:
