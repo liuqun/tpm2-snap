@@ -177,6 +177,7 @@ parts:
       - libcmocka-dev
     prime:
       - -include
+      - -lib/pkgconfig
 
   tpm2-abrmd:
     # You can download the latest official release from:
@@ -198,6 +199,7 @@ parts:
       - pkg-config
     prime:
       - -include
+      - -lib/pkgconfig
     install: |
       # Run all tests shipped by default
       make check
